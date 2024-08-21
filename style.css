@@ -1,0 +1,385 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header and navigation styles */
+.header {
+    background-color: #000;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Stick it to the top of the page */
+    width: 100%; /* Ensure it takes the full width of the page */
+    z-index: 1000; /* Ensure it is above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better visibility */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.name a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.name a:hover {
+    color: #ccc;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+}
+
+ul.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+ul.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+ul.nav a:hover {
+    background-color: #444;
+}
+
+/* Adding a top margin to the first section to account for the fixed header height */
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+    text-align: center;
+    margin-top: 9vh; /* Add a margin equal to the header height */
+}
+
+.Main_heading {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box {
+    background-color: #000;
+    height: 4px;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section2 .content {
+    max-width: 600px;
+}
+
+.section2 h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.section2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image_about {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    max-width: 1000px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section2 .about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.image_logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section2 .education_content {
+    max-width: 80vw;
+}
+
+.section2_education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section2_education p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.section2_education {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project h3 {
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+.project h3:hover {
+    background-color: #444;
+}
+
+.project-details {
+    display: none;
+    padding: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.project.expanded .project-details {
+    display: block;
+}
+
+.project.expanded {
+    flex: 1 1 100%;
+}
+
+.embed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 75%; /* Adjust the percentage to maintain aspect ratio */
+    overflow: hidden;
+}
+
+.responsive-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+    max-width: 80vw;
+    margin-left: 10vw;
+    border-radius: 20px;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume_embed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80vw;
+    height: auto;
+    padding-bottom: 75%; /* Adjust the percentage to maintain aspect ratio */
+    overflow: hidden;
+}
+
+.publication h3 {
+    margin: 0;
+    padding: 20px;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 9vh; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    ul.nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    ul.nav a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .section1 {
+        height: 20vh;
+    }
+
+    .Main_heading {
+        font-size: 40px;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section2 .content {
+        max-width: 100%;
+    }
+
+    .image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .section2 .about_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 1000px;
+    }
+
+    .image_about {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        max-width: 1000px;
+        width: 250px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
