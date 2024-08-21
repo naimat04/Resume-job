@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="name"><a href="">Nimatullah</a></div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div class="nav-links">
+                <ul class="nav">
+                    <a href="index.html">
+                        <li>Research</li>
+                    </a>
+                    <a href="aboutme.html">
+                        <li>About me</li>
+                    </a>
+                    <a href="resume.html">
+                        <li>Resume</li>
+                    </a>
+                    <a href="publication.html">
+                        <li>Publication</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <h1 class="Main_heading">RESEARCH</h1>
+    </section>
+    <section class="line">
+        <div class="box"></div>
+    </section>
+    <section class="section2">
+        <div class="content">
+            <h1>NEAR-SURFACE GEOPHYSICS</h1>
+            <p>The focus of my current research is mainly the applications of geophysical methods (e.g., electrical
+                resistivity and induced polarization) for understanding and monitoring near-surface geological,
+                environmental and engineering processes.</p>
+        </div>
+        <div><img class="image" src="image/survey_image.jpg" alt="survey image"></div>
+    </section>
+    <section class="line">
+        <div class="box"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="project" id="project1">
+            <h3 onclick="toggleProject('project1')">Modeling and Inversion of Cross-Well Electrical Resistivity Tomography Data</h3>
+            <div class="project-details" id="project1-details">
+                <h3>Under the supervision of Prof. Anand Singh(IIT Bombay)</h3>
+                <div class="embed-container">
+                    <embed src="project/NIMATULLAH.pdf" type="application/pdf" class="responsive-embed" />
+                </div>
+            </div>
+        </div>
+        <div class="project" id="project2">
+            <h3 onclick="toggleProject('project2')">Project 2</h3>
+            <div class="project-details" id="project2-details">
+                <p>Details of Project 2...</p>
+            </div>
+        </div>
+        <div class="project" id="project3">
+            <h3 onclick="toggleProject('project3')">Project 3</h3>
+            <div class="project-details" id="project3-details">
+                <p>Details of Project 3...</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
